@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd $(cd `dirname $0`; pwd)
+
 LOG_PATH=logs
 
 if [ ! -d "$LOG_PATH" ]; then
