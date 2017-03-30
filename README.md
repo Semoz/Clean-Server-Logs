@@ -26,3 +26,6 @@ clean_logs.sh 配置 默认日志路径是/tmp、默认过期文件是180天前
 -n 文件匹配 默认"*"
 
 crontab增加run脚本定时执行
+执行 crontab -e 
+添加 一条0  3 * * * run_task01.sh 每天3点执行一次
+wq保存退出，执行完毕后会在目录下的logs文件夹内生成日志文件
